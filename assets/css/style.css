@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+    background: url("../images/Page.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.body2 {
+    font-family: "Afacad Flux", sans-serif;
+    background: url("../images/Page2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.container h1 {
+    font-size: xx-large;
+    color: #20466a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-family: "Aldrich", sans-serif;
+    color: white;
+    background-color: #20466a;
+    height: 80px;
+}
+
+nav h1 {
+    transition: 1s;
+}
+
+nav h1:hover {
+    font-size: xx-large;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    transition: 0.6s;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+a:hover {
+    color: #80c6f8;
+    text-decoration: underline;
+}
+
+.center {
+    position: static;
+    transform: translateX(-20%);
+}
+
+p {
+    font-size: smaller;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(25px);
+    width: 550px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    padding: 1em;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+.tablecontainer {
+    max-height: 500px; /* Atur tinggi maksimal table */
+    overflow: auto;
+    position: relative;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Agar tabel bisa scroll horizontal */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1; /* Warna latar belakang header agar terlihat jelas */
+    z-index: 2;
+}
+
+thead th:first-child {
+    left: 0;
+    z-index: 3;
+}
+
+tbody {
+    display: block;
+    overflow: auto;
+    max-height: 400px; /* Batas tinggi untuk scroll vertikal */
+    width: 100%;
+}
+
+tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Memastikan layout tabel tetap */
+}
+
+tfoot {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    font-size: larger;
+    margin-left: 10px;
+}
+        
+table, th, td { 
+    border: 1px solid black; 
+}
+
+th, td { 
+    padding: 10px; 
+    text-align: left; 
+    text-align: center;
+} */
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+button {
+    padding: 1em;
+    margin: 1em 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #20466a;
+    color: white;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button2 {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    /* box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5); */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-size: large;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background-color: #20466a;
+    color: white;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.adddata {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.adddata:hover {
+    box-sizing: border-box;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: large;
+}
+
+@media (max-width: 600px) {
+    .tablecontainer {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .form {
+        width: 80%;
+    }
+    
+    body {
+        font-size: 12px;
+        background: url('../images/Page3.png') no-repeat center center/cover;
+    }
+
+    .body2 {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 25px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 180px;
+    }
+
+    .container2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    select {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .center {
+        transform: translateX(-5%);
+    }
+
+    nav h1:hover {
+        font-size: x-large;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+}
