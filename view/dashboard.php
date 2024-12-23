@@ -32,7 +32,7 @@
             <h1>TEKNIK INFORMATIKA ITERA</h1>
             <br>
             <h2>
-                Klik tombok di bawah untuk mengelola data mahasiswa
+                Klik tombol di bawah untuk mengelola data mahasiswa
             </h2>
             <a href="data.php"><button class="button">Data Mahasiswa</button></a>
         </div>
