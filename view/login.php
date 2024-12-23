@@ -46,5 +46,4 @@
 </body>
 <script src="../assets/js/script.js"></script>
 <script>validateUser();</script>
-<!-- <script>logIn();</script> -->
 </html>

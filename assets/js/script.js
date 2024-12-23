@@ -1,3 +1,5 @@
+
+// memvalidasi data user
 function validateUser() {
     document.addEventListener('DOMContentLoaded', function() {
         const loginForm = document.getElementById('loginForm');
@@ -19,6 +21,7 @@ function validateUser() {
     });
 }
 
+// memvalidasi data mahasiswa
 function validateMahasiswa() {
     document.addEventListener('DOMContentLoaded', function() {
         const createForm = document.getElementById('formMahasiswa');
@@ -51,43 +54,6 @@ function validateMahasiswa() {
         };
     });
 }
-
-// Fungsi untuk memanggil data mahasiswa dari getData.php (tapi pengisian tetap di PHP)
-
-// function logIn() {
-//     document.getElementById('loginForm').onsubmit = function(event) {
-//         event.preventDefault();  // Mencegah reload
-        
-//         const formData = new FormData(this);
-        
-//         fetch('login.php', {
-//             method: 'POST',
-//             body: formData
-//         })
-//         .then(response => response.json())
-//         .then(data => {
-//             if (data.success) {
-//                 window.location.href = 'index.html';
-//             } else {
-//                 alert('Username atau Password salah!');
-//             }
-//         })
-//         .catch(error => {
-//             console.error('Error:', error);
-//             alert('Terjadi kesalahan. Coba lagi.');
-//         });
-//     };
-// }
-
-// function loadMahasiswa() {
-//     fetch('getData.php')
-//         .then(response => response.json())
-//         .then(data => {
-//             // Di sini hanya bisa digunakan untuk kebutuhan lain seperti filter atau refresh, bukan pengisian tabel
-//             console.log(data); // Cek data di console (untuk debugging)
-//         })
-//         .catch(error => console.error('Error:', error));
-// }
 
 document.addEventListener('DOMContentLoaded', function() {
     validateUser();

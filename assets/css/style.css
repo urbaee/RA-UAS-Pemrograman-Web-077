@@ -166,24 +166,6 @@ tfoot {
     table-layout: fixed;
 }
 
-/* table {
-    width: 100%; 
-    border-collapse: collapse; 
-    margin-top: 20px; 
-    font-size: larger;
-    margin-left: 10px;
-}
-        
-table, th, td { 
-    border: 1px solid black; 
-}
-
-th, td { 
-    padding: 10px; 
-    text-align: left; 
-    text-align: center;
-} */
-
 input {
     width: 100%;
     padding: 12px 20px;
